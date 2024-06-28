@@ -14,10 +14,8 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Setup Node
+      - name: Setup Node.js 20
         uses: actions/setup-node@v3
-        with:
-         node-version: '20'
         
       - name: Download a Build Artifact
         uses: actions/download-artifact@v4.1.7
